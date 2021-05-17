@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Анастасия Хрычeва](https://up.htmlacademy.ru/htmlcss/31/user/1644171).
-* Наставник: `Неизвестно`.
+- Студент: [Анастасия Хрычeва](https://up.htmlacademy.ru/htmlcss/31/user/1644171).
+- Наставник:[Ярослав Семенченко](https://htmlacademy.ru/profile/4ubaka447).
 
 ---
 

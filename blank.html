@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,20 +10,29 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото и видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Главная страница</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="blank.html">Информация</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="blank.html">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="blank.html">Карта штата</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Гостиницы</a>
+        </li>
       </ul>
-      <a href="index.html">
+      <a class="main-header__logo" href="index.html">
         <img src="img/page/logo.svg" width="170" height="70" alt="Логотип сайта города Седона" />
       </a>
     </nav>
@@ -31,28 +40,30 @@
   <main>
     <h1>Бланк</h1>
   </main>
-  <footer>
-    <h2>Как с нами связаться</h2>
-    <div>
-      <p>#visitSEDONA</p>
-      <a href="tel:+78005558628">+7 800 555-86-28</a>
+  <footer class="page-footer">
+    <h2 class="visually-hidden">Как с нами связаться</h2>
+    <div class="page-footer__contacts contacts">
+      <p class="contacts__text">#visitSEDONA</p>
+      <a class="contacts__link" href="tel:+78005558628">+7 800 555-86-28</a>
     </div>
-    <div>
-      <ul>
-        <li>
-          <a href="blank.html">Твиттер</a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--tw" href="blank.html">Твиттер</a>
         </li>
-        <li>
-          <a href="blank.html">Facebook</a>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="blank.html">Facebook</a>
         </li>
-        <li>
-          <a href="blank.html">Youtube</a>
+        <li class="social_item">
+          <a class="social__link social__link--yt" href="blank.html">Youtube</a>
         </li>
       </ul>
     </div>
-    <div>
-      <p>Website by</p>
-      <a href="blank.html">HTMLAcademy</a>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Website by</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+        <img class="copyright__picture" src="img/page/logo_htmlacademy.svg" alt="HTMLAcademy" width="115" height="33">
+      </a>
     </div>
   </footer>
 </body>

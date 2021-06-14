@@ -1,0 +1,243 @@
+@font-face {
+  font-family:"PT Sans";
+  src:
+  url("../fonts/PTSans.woff2") format("woff2"),
+  url("../fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"PT Sans";
+  src:url("../fonts/PTSans-Bold.woff2") format("woff2"),
+  url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal ;
+}
+
+:root {
+  --basic-white: #ffffff;
+  --basic-blue: #81b3d2;
+  --basic-neutral:#eeeeee;
+  --basic-dark:#888888;
+  --basic-brown:#766357;
+  --basic-text-grey:#333333;
+  --basic-black:#000000;
+  --hover-blue:#669ec0;
+  --pressing-blue:#5496bd;
+  --hover-brown:#604E43;
+  --pressing-brown:#503e33;
+  --special-up-grey:#cacaca;
+  --logo-grey:#bdbbbc;
+  --special-input-grey:#EBEBEB;
+  --special-checkbox-grey:#6A6A6A;
+  --special-input:#F2F2F2;
+  --rest-grey: #A9A9A9;
+
+}
+
+/* основные параметры */
+.page-body {
+  min-width: 1200px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--basic-text-grey);
+  text-transform: uppercase;
+  background-color: var( --basic-white);
+  margin: 0;
+  padding: 0;
+}
+
+/* блок навигации */
+.main-header {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.navigation__list {
+  list-style: none;
+}
+
+/* ссылки навигации */
+.navigation__link {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+/* скрытые тексты */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* главная картинка */
+.advantages__img {
+  text-align: center;
+  background-color: var(--basic-blue);
+  background-image: url(../img/page/background-mask.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/* заголовок */
+.advantages__head {
+font-weight: bold;
+font-size: 21px;
+line-height: 26px;
+color: var(--basic-black);
+text-align: center;
+}
+
+/* текст */
+.advantages__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* общий блок преимуществ */
+.advantages-list {
+  list-style: none;
+}
+
+/* блок первого преимущества */
+ .advantage__wrapper {
+   background-image: url(../img/page/house.jpg);
+   background-color: var( --basic-blue);
+   background-repeat: no-repeat;
+   background-position: right;
+ }
+
+/* блок вложенного списка  */
+.advantage__features {
+  list-style: none;
+}
+
+/* заголовок преимуществ */
+.advantage__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+/* заголовок вложенного списка*/
+.advantage__feature-title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+/* текст вложенного списка */
+.advantage__feature-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* блок второго преимущества */
+.advantage--bridge {
+  background-image: url(../img/page/bridge.jpg);
+  background-color: var( --basic-blue);
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: right;
+}
+
+/* блок третьего преимущества */
+.advantage--area {
+  background-color: var(--basic-neutral);
+}
+
+/* блок четвертого преимущества */
+.advantage--road {
+  background-color: var(--basic-neutral);
+}
+
+/* блок пятого преимущества */
+.advantage--people{
+ background-color: var(--basic-neutral);
+}
+
+/* заголовок поиска */
+.page-main__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+/* текст поиска */
+.page-main__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+/* ссылка поиска */
+.page-main__link {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  color: var(--basic-brown);
+}
+
+.page-main__link:focus,
+.page-main__link:hover {
+color: var( --hover-brown);
+}
+
+.page-main__link:active {
+color: var(--pressing-brown);
+}
+
+/* подвал контакты */
+.page-footer__contacts {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+/* ссылка контакта  */
+.contacts__link {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+/* ссылки на соцсети */
+.social__list {
+list-style: none;
+}
+
+.social__link {
+text-decoration: none;
+}
+
+/* текст авторского права */
+.copyright__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+

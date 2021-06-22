@@ -35,31 +35,31 @@
       </a>
     </nav>
   </header>
-  <main>
-    <h1>Седона каталог</h1>
-    <section>
-      <h2>Фильтр товаров</h2>
-      <form method="get" action="https://echo.htmlacademy.ru">
-        <div>
-          <h3>Инфраструктура</h3>
-          <ul>
-            <li>
+  <main class="page-main">
+    <h1 class="visually-hidden">Седона каталог</h1>
+    <section class="conditions">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form class="conditions__form" method="get" action="https://echo.htmlacademy.ru">
+        <div class="conditions__infrastructure  infrastructure">
+          <h3 class="infrastructure__title">Инфраструктура</h3>
+          <ul class="infrastructure__list">
+            <li class="infrastructure__item">
               <input type="checkbox" id="filter-swimming" name="swimming" checked>
               <label for="filter-swimming">Бассейн</label>
             </li>
-            <li>
+            <li class="infrastructure__item">
               <input type="checkbox" id="filter-parking" name="parking">
               <label for="filter-parking">Парковка</label>
             </li>
-            <li>
+            <li class="infrastructure__item">
               <input type="checkbox" id="filter-wifi" name="wi-fi">
               <label for="filter-wifi">wi-fi</label>
             </li>
           </ul>
         </div>
-        <div>
-          <h3>Тип жилья</h3>
-          <ul>
+        <div class="conditions__housing housing">
+          <h3 class="housing__title">Тип жилья</h3>
+          <ul class="housing__list">
             <li>
               <input type="checkbox" id="filter-hotel" name="hotel" checked>
               <label for="filter-hotel">Гостиница</label>
@@ -75,7 +75,7 @@
           </ul>
         </div>
         <div>
-          <h3>Стоимость в сутки,р</h3>
+          <h3 class="conditions__title">Стоимость в сутки,р</h3>
           <label for="price-min"></label>
           <input id="price-min" type="text" name="price-min" placeholder="от 0">
           <label for="price-max"></label>

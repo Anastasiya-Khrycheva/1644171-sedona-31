@@ -82,18 +82,18 @@
   overflow: hidden;
 }
 
+/* .header {} */
+
 /* главная картинка */
-.advantages__img {
-  text-align: center;
-  background-color: var(--basic-blue);
+.header__img {
   background-image: url(../img/page/background-mask.jpg);
+  background-color: var(--basic-blue);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
+  min-width: 100%;
 }
 
 /* заголовок */
-.advantages__head {
+.header__title {
 font-weight: bold;
 font-size: 21px;
 line-height: 26px;
@@ -102,80 +102,131 @@ text-align: center;
 }
 
 /* текст */
-.advantages__text {
+.header__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
 }
 
-/* общий блок преимуществ */
-.advantages-list {
-  list-style: none;
+/* блок преимуществ */
+/* .advantages {} */
+
+/* первое преимущество */
+.advantages__city {
+  position: relative;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  height: 256px;
 }
 
-/* блок первого преимущества */
- .advantage__wrapper {
-   background-image: url(../img/page/house.jpg);
-   background-color: var( --basic-blue);
-   background-repeat: no-repeat;
-   background-position: right;
- }
-
-/* блок вложенного списка  */
-.advantage__features {
-  list-style: none;
+.advantages__city::after {
+  content: url(../img/page/house.jpg);
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-/* заголовок преимуществ */
-.advantage__title {
+.city__title {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  color: var(--basic-black);
 }
 
-/* заголовок вложенного списка*/
-.advantage__feature-title {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--basic-black);
-}
-
-/* текст вложенного списка */
-.advantage__feature-text {
+.city__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
 }
 
-/* блок второго преимущества */
-.advantage--bridge {
-  background-image: url(../img/page/bridge.jpg);
-  background-color: var( --basic-blue);
-  background-repeat: no-repeat;
-  background-position: left;
+/* список  дополнительных преимуществ */
+/* .features {} */
+
+.features__list{
+  list-style: none;
+  background-color: var(--basic-white);
+  }
+
+.features__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.features__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-text-grey);
+}
+
+.features__list--home::before {
+  content: url(../img/icons/home.svg);
+}
+
+.features__list--food::before {
+  content: url(../img/icons/food.svg);
+}
+
+.features__list--souvenirs::before {
+  content: url(../img/icons/souvenirs.svg);
+}
+
+/* второе преимущество */
+.advantages__bridge {
+  position: relative;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
   text-align: right;
+  height: 256px;
 }
 
-/* блок третьего преимущества */
-.advantage--area {
+.advantages__bridge::before {
+  content: url(../img/page/bridge.jpg);
+  position: absolute;
+  left: 0;
+}
+
+.bridge__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.birdge__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* список остальных преимуществ */
+.advantages__list {
   background-color: var(--basic-neutral);
 }
 
-/* блок четвертого преимущества */
-.advantage--road {
-  background-color: var(--basic-neutral);
+.list__item {
+  list-style: none;
 }
 
-/* блок пятого преимущества */
-.advantage--people{
- background-color: var(--basic-neutral);
+.list__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
 }
 
-/* заголовок поиска */
-.page-main__title {
+.list__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* блок поиска */
+/* .page-search" {} */
+
+ /* заголовок поиска */
+.page-search__title {
   font-weight: bold;
   font-size: 30px;
   line-height: 24px;
@@ -184,7 +235,7 @@ text-align: center;
 }
 
 /* текст поиска */
-.page-main__text {
+.page-search__text {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
@@ -193,7 +244,7 @@ text-align: center;
 }
 
 /* ссылка поиска */
-.page-main__link {
+.page-search__link {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -201,13 +252,13 @@ text-align: center;
   color: var(--basic-brown);
 }
 
-.page-main__link:focus,
-.page-main__link:hover {
-color: var( --hover-brown);
+.page-search__link:focus,
+.page-search__link:hover {
+  color: var( --hover-brown);
 }
 
-.page-main__link:active {
-color: var(--pressing-brown);
+.page-search__link:active {
+  color: var(--pressing-brown);
 }
 
 /* подвал контакты */
@@ -226,11 +277,11 @@ color: var(--pressing-brown);
 
 /* ссылки на соцсети */
 .social__list {
-list-style: none;
+  list-style: none;
 }
 
 .social__link {
-text-decoration: none;
+  text-decoration: none;
 }
 
 /* текст авторского права */

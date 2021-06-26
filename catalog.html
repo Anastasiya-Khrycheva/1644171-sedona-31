@@ -40,26 +40,26 @@
     <section class="conditions">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="conditions__form" method="get" action="https://echo.htmlacademy.ru">
-        <div class="conditions__infrastructure  infrastructure">
-          <h3 class="infrastructure__title">Инфраструктура</h3>
-          <ul class="infrastructure__list">
-            <li class="infrastructure__item">
+        <div class="conditions__infrastructure">
+          <h3 class="conditions__title">Инфраструктура:</h3>
+          <ul class="conditions__list list-sort">
+            <li>
               <input type="checkbox" id="filter-swimming" name="swimming" checked>
               <label for="filter-swimming">Бассейн</label>
             </li>
-            <li class="infrastructure__item">
+            <li>
               <input type="checkbox" id="filter-parking" name="parking">
               <label for="filter-parking">Парковка</label>
             </li>
-            <li class="infrastructure__item">
+            <li>
               <input type="checkbox" id="filter-wifi" name="wi-fi">
               <label for="filter-wifi">wi-fi</label>
             </li>
           </ul>
         </div>
-        <div class="conditions__housing housing">
-          <h3 class="housing__title">Тип жилья</h3>
-          <ul class="housing__list">
+        <div class="conditions__housing">
+          <h3 class="conditions__title">Тип жилья:</h3>
+          <ul class="conditions__list list-sort">
             <li>
               <input type="checkbox" id="filter-hotel" name="hotel" checked>
               <label for="filter-hotel">Гостиница</label>
@@ -74,8 +74,8 @@
             </li>
           </ul>
         </div>
-        <div>
-          <h3 class="conditions__title">Стоимость в сутки,р</h3>
+        <div class="conditions__range">
+          <h3 class="conditions__title">Стоимость в сутки,р:</h3>
           <label for="price-min"></label>
           <input id="price-min" type="text" name="price-min" placeholder="от 0">
           <label for="price-max"></label>
@@ -83,59 +83,61 @@
           <button type="submit">Показать</button>
         </div>
       </form>
-      <p>Найдено:<span>3</span> </p>
-      <span>Сортировка:</span>
-      <ul>
-        <li>
-          <a href="blank.html">по цене</a>
-        </li>
-        <li>
-          <a href="blank.html">по типу</a>
-        </li>
-        <li>
-          <a href="blank.html">по рейтингу</a>
-        </li>
-        <li>
-          <a href="blank.html">
-            <span>по возрастанию</span>
-          </a>
-        </li>
-        <li>
-          <a href="blank.html">
-            <span>по убыванию</span>
-          </a>
-        </li>
-      </ul>
+      <div class="results">
+        <p class="results__title">Найдено:<span>3</span> </p>
+        <span class="results__subtitle">Сортировка:</span>
+        <ul class="results__nav nav">
+          <li class="nav__metod">
+            <a class="nav__link" href="#">по цене</a>
+          </li>
+          <li class="nav__metod">
+            <a class="nav__link" href="blank.html">по типу</a>
+          </li>
+          <li>
+            <a class="nav__link" href="blank.html">по рейтингу</a>
+          </li>
+          <li class="nav__metod">
+            <a class="nav__up" href="blank.html">
+              <span>по возрастанию</span>
+            </a>
+          </li>
+          <li class="nav__metod">
+            <a class="nav__down" href="blank.html">
+              <span>по убыванию</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section>
-      <h2>Типы гостиниц</h2>
-      <div>
-        <h3>Amara Resort & Spa</h3>
-        <span>гостиница</span>
-        <span>от 4000 р</span>
-        <a href="blank.html">Подробнее</a>
-        <a class="button" href="blank.html">Забронировать</a>
-        <p>Рейтинг: 8,5</p>
+    <section class="blok-hotels">
+      <h2 class="visually-hidden">Типы гостиниц</h2>
+      <div class="blok-hotels__list-hotel">
+        <h3 class="list-hotel__title">Amara Resort & Spa</h3>
+        <span class="list-hotel__type">гостиница</span>
+        <span class="list-hotel__price">от 4000 р</span>
+        <a class="list-hotel__link" href="blank.html">Подробнее</a>
+        <a class="list-hotel__button" href="blank.html">Забронировать</a>
+        <p class="list-hotel__rating">Рейтинг: 8,5</p>
         <img src="img/catalog/amara-resort.jpg" width="135" height="90"
           alt="фото гостиницы Amara Resort в окружении цветущих деревьев">
       </div>
-      <div>
-        <h3>Desert Quail Inn</h3>
-        <span>мотель</span>
-        <span>от 3000 р</span>
-        <a href="blank.html">Подробнее</a>
-        <a class="button" href="blank.html">Забронировать</a>
-        <p>Рейтинг: 8,9</p>
+      <div class="blok-hotels__list-hotel">
+        <h3 class="list-hotel__title">Desert Quail Inn</h3>
+        <span class="list-hotel__type">мотель</span>
+        <span class="list-hotel__price">от 3000 р</span>
+        <a class="list-hotel__link" href="blank.html">Подробнее</a>
+        <a class="list-hotel__button" href="blank.html">Забронировать</a>
+        <p class="list-hotel__rating">Рейтинг: 8,9</p>
         <img src="img/catalog/desert-quail.jpg" width="135" height="90"
           alt="вид на гостиницу Desert Quail Inn c вывеской при входе">
       </div>
-      <div>
-        <h3>Villas at Poco Diablo</h3>
-        <span>апартаменты</span>
-        <span>от 2000 р</span>
-        <a href="blank.html">Подробнее</a>
-        <a class="button" href="blank.html">Забронировать</a>
-        <p>Рейтинг: 9,2</p>
+      <div class="blok-hotels__list-hotel">
+        <h3 class="list-hotel__title">Villas at Poco Diablo</h3>
+        <span class="list-hotel__type">апартаменты</span>
+        <span class="list-hotel__price">от 2000 р</span>
+        <a class="list-hotel__link" href="blank.html">Подробнее</a>
+        <a class="list-hotel__button" href="blank.html">Забронировать</a>
+        <p class="list-hotel__rating">Рейтинг: 9,2</p>
         <img src="img/catalog/villas-poco.jpg" width="135" height="90"
           alt="вид на гостиницу Villas at Poco Diablo с газоном и деревьями при входе">
       </div>
@@ -148,14 +150,14 @@
       <a class="contacts__link" href="tel:+78005558628">+7 800 555-86-28</a>
     </div>
     <div class="page-footer__social social">
-      <ul class="social__item">
-        <li class="social__item  social__item--tw">
+      <ul class="social__list">
+        <li class="social__item">
           <a class="social__link social__link--tw" href="blank.html">Твиттер</a>
         </li>
-        <li class="social__item social__item--fb">
+        <li class="social__item">
           <a class="social__link social__link--fb" href="blank.html">Facebook</a>
         </li>
-        <li class="social_item social__item--yt">
+        <li class="social_item">
           <a class="social__link social__link--yt" href="blank.html">Youtube</a>
         </li>
       </ul>

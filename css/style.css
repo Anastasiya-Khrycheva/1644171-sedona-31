@@ -33,6 +33,7 @@
   --special-checkbox-grey:#6A6A6A;
   --special-input:#F2F2F2;
   --rest-grey: #A9A9A9;
+  --grey-metallic: #666666;
 
 }
 
@@ -142,7 +143,7 @@ text-align: center;
 /* список  дополнительных преимуществ */
 /* .features {} */
 
-.features__list{
+.features__list {
   list-style: none;
   background-color: var(--basic-white);
   }
@@ -290,5 +291,141 @@ text-align: center;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+}
+
+/* каталог */
+/* .conditions{} */
+
+/* блок условий */
+.conditions__form {
+  background-image: url(../img/catalog/background-filter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--basic-white);
+}
+
+/*  инфраструктура */
+/* .conditions__infrastructure {} */
+
+.list-sort {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  list-style: none;
+}
+
+.conditions__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* тип жилья */
+/* .conditions__housing {} */
+
+/* блок диапазон цены */
+/* .conditions__range {} */
+
+/* блок сортировки */
+/* .results {} */
+
+.results__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.results__subtitle {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+/* список навигации по результатам */
+.nav {
+  list-style: none;
+  text-decoration-style: dashed;
+}
+
+.nav__link {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.nav__link:hover ,
+.nav__link:focus {
+  color: var(--basic-blue);
+  text-decoration: none;
+}
+
+.nav__link:active {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+/* блок гостиниц */
+/* .blok-hotels {} */
+
+/* список гостиниц */
+/* .blok-hotels__list-hotel {} */
+
+.list-hotel__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.list-hotel__type {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-text-grey);
+}
+
+.list-hotel__price {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-text-grey);
+}
+
+.list-hotel__link {
+  background-color:var(--hover-blue);
+  color: var(--basic-white);
+}
+
+.list-hotel__link:hover {
+  background-color: var(--hover-blue);
+}
+
+.list-hotel__link:active {
+  background-color: var(--pressing-blue);
+}
+
+.list-hotel__button {
+background-color: var(--basic-brown);
+color: var(--basic-white);
+}
+
+.list-hotel__button:hover {
+background-color: var(--hover-brown);
+}
+
+.list-hotel__button:active {
+background-color: var(--pressing-brown);
+}
+
+.list-hotel__rating {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--grey-metallic);
 }
 
